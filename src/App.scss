@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+
+	.header {
+	  background-color: #222;
+	  height: 150px;
+	  padding: 20px;
+	  color: white;
+
+		.logo {
+			height: 100px;
+			width: auto;
+	  	}
+	  	
+	  	.title {
+			font-size: 1.8em;
+		}
+	}
+
+	.intro {
+		.searchbox {
+			position: relative;
+
+			.search {
+				border: 1px solid #bbb;
+				padding: 10px 20px;
+				font-size: 18px;
+				outline: none;
+				text-transform: uppercase;
+				box-shadow: none;
+				width: 158px;
+
+				&::-webkit-input-placeholder {
+				  text-transform: none;
+				}
+				&::-moz-placeholder {
+				  text-transform: none;
+				}
+				&:-ms-input-placeholder {
+				  text-transform: none;
+				}
+				&:-moz-placeholder {
+				  text-transform: none;
+				}
+			}
+
+			.suggestion-list {
+				position: absolute;
+				top: 43px;
+				left: 50%;
+				min-width: 200px;
+				margin-left: -149px;
+				background-color: white;
+
+				> div {
+					border: 1px solid #bbb;
+					border-width: 0px 1px 1px;
+					text-align: left;
+					padding: 5px 10px;
+					cursor: pointer;
+				}
+			}
+
+			button {
+				padding: 9px 10px;
+				font-size: 18px;
+				vertical-align: top;
+			}
+		}
+	}
+
+	.store-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px;
+
+		> div {
+			flex-grow: 1;
+			display: inline-block;
+		    margin: 20px 10px;
+		    width: calc((100% - 2 * 22px) / 2);
+		    border: 1px solid #ddd;
+		    max-width: calc((100% - 2 * 22px) / 2);
+
+		    h2 {
+		    	font-size: 18px;
+		    	margin: 0.2em auto 0;
+		    }
+
+		    h3 {
+		    	font-size: 14px;
+		    	margin: 0.2em auto 0.5em;
+		    }
+
+		    @media all and (min-width: 1000px) {
+		    	width: calc((100% - 4 * 22px) / 4);
+		    	max-width: calc((100% - 4 * 22px) / 4);
+
+		    	h2 {
+			    	font-size: 24px;
+			    }
+
+			    h3 {
+			    	font-size: 20px;
+			    }
+		    }
+
+		    img {
+		    	max-width: 100%;
+		    	height: auto;
+		    	display: block;
+		    	margin: 0 auto;
+		    }
+		}
+	}
+}
