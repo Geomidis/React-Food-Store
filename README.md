@@ -13,7 +13,7 @@ It is also split in external components for ease of expansion and keeping the co
 
 1. It will fetch a list of stores (stored in stores.json) and sort them alphabetically before rendering.
 2. It allows the user to type in partial/full postcodes into a live search box and get suggestions for matching results
-3. Upon selecing an available postcode or typing an unavailable in full, it will show the 5 nearest ones sorted by proximity
+3. Upon selecing an available postcode or typing an unavailable in full, it will show the nearest ones that match the postcodes.io results using the "Nearest outward code for outward code" endpoint, sorted by proximity
 
 All postcode queries are using [postcode.io](http://postcodes.io/)
 
