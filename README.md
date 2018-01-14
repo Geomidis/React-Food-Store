@@ -1,4 +1,4 @@
-#React Store Search
+# React Store Search
 
 This is a store search/store locator, built in React. It is using [postcodes.io](http://postcodes.io) for all postcode queries and is similar to what you would expect to find on a retailer website to help you locate your nearest store. It will list all stores alphabetically on load and you can search by partial/full postcode, getting suggestions as you type. This project started as a test, but i feel it might help people who want to built something similar or see how they can use Ramda with React perhaps along some api calls.
 
@@ -9,7 +9,7 @@ It is only using Ramda as a dependency for some functional programming, but you 
 
 It is also split in external components for ease of expansion and keeping the code as lean as possible in each component.
 
-##What it will do:
+## What it will do:
 
 1. It will fetch a list of stores (stored in stores.json) and sort them alphabetically before rendering.
 2. It allows the user to type in partial/full postcodes into a live search box and get suggestions for matching results
@@ -17,7 +17,7 @@ It is also split in external components for ease of expansion and keeping the co
 
 All postcode queries are using [postcode.io](http://postcodes.io/)
 
-##How to run
+## How to run
 
 npm install will take care of all dependencies. In windows, you might have to run `npm install -g node-gup` too, if you encounter errors. After this, you have the following choices:
 
@@ -29,7 +29,7 @@ You can also use Yarn instead of npm. (yarn start, yarn build)
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser. Linting errors will show up in the console and the page will reload when making edits.
 
-##What can be done better/differently
+## What can be done better/differently
 
 1. Upon entering part of a postcode, mark that part of a postcode in suggestions in *bold*. This is really easy and trivial to add, but for the purpose of this test it is a little too much, probably needed for a production version though.
 2. Migrate the data transformation functionality to a helpers library so they can be abstracted from the components/main app.
