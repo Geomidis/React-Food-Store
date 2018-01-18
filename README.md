@@ -1,4 +1,4 @@
-# React Store Search
+# React Food Store with live search
 
 This is a store search/store locator, built in React. It is using [postcodes.io](http://postcodes.io) for all postcode queries and is similar to what you would expect to find on a retailer website to help you locate your nearest store. It will list all stores alphabetically on load and you can search by partial/full postcode, getting suggestions as you type. This project started as a test, but i feel it might help people who want to built something similar or see how they can use Ramda with React perhaps along some api calls.
 
